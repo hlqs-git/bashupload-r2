@@ -127,13 +127,13 @@ export default {
         const userAgent = request.headers.get('user-agent') || '';
         if (userAgent.toLowerCase().includes('curl')) {
           // 如果是 curl，返回简单的文本说明
-          return new Response(`bashupload.app - 一次性文件分享服务 | One-time File Sharing Service
+          return new Response(`r2.gmyj.org - 一次性文件分享服务 | One-time File Sharing Service
 
 使用方法 Usage:
-  curl bashupload.app -T file.txt                    # 上传文件 / Upload file
-  curl bashupload.app -d "text content"              # 上传文本 / Upload text (saved as .txt)
-  curl bashupload.app/short -T file.txt              # 返回短链接 / Short URL
-  curl -H "X-Expiration-Seconds: 3600" bashupload.app -T file.txt   # 设置有效期 / Set expiration time
+  curl r2.gmyj.org -T file.txt                    # 上传文件 / Upload file
+  curl r2.gmyj.org -d "text content"              # 上传文本 / Upload text (saved as .txt)
+  curl r2.gmyj.org/short -T file.txt              # 返回短链接 / Short URL
+  curl -H "X-Expiration-Seconds: 3600" r2.gmyj.org -T file.txt   # 设置有效期 / Set expiration time
 
 特性 Features:
   • 文件只能下载一次 / Files can only be downloaded once (默认 default)
